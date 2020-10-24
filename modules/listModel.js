@@ -5,16 +5,14 @@ const Schema = mongoose.Schema;
 const listSchema = new Schema({
     name: {
         type: String,
-        trim: true,
-        required: "enter name of catagory"
+        trim: true
     },
     username: {
         type: String,
-        trim: true,
-        required: "enter top 5 of answers"
+        trim: true
     }
 });
 
-const List = mongoose.model("List", listSchema);
+const list = mongoose.model("list", listSchema);
 
-module.exports = List;
+module.exports = list;
