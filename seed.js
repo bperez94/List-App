@@ -1,9 +1,10 @@
 var seeder = require('mongoose-seed');
+
 // Connect to MongoDB via Mongoose
 seeder.connect('mongodb://localhost/list', function() {
   // Load Mongoose models
   seeder.loadModels([
-    'modules/listModel.js',
+    'models/listModel.js',
     
   ]);
   // Clear specified collections
